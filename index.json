@@ -1,0 +1,50 @@
+{
+    "type":"MCU",
+    "name":"RP2350",
+    "title": "Raspberry Pi MCU RP2350",
+    "description":"Raspberry Pi Cortex-M33 MCU",
+    "version":"1.1.0",
+    "Core": {
+        "num": 1,
+        "type":"Cortex-M33",
+        "Freq": 150,
+        "DMIPS": 100,
+        "CoreMark": 160
+    },
+    "manufacturer": {
+        "vendor":"raspberrypi",
+        "homepage": "https://www.raspberrypi.com/products/rp2350"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/RP2350.git"
+    },
+    "series":["RP2350"],
+    "package":["QFN60","QFN80"],
+    "peripheral": ["TIM","ADC","USB","UART","SPI","LDO","PWM"],
+    "price":[2,6],
+    "PWR": {
+        "VDD": [2800,5000],
+        "Ivdd": 3.5,
+        "LDO": [5000,3300],
+        "rate": 1024
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "upload": {
+        "ISP": true,
+        "IAP": true,
+        "SWD": true,
+        "speed": 115200
+    },
+    "keywords": [
+        "RISC-V",
+        "Cortex-M33",
+        "Raspberry",
+        "RP2350",
+        "USB-PD","NFC","BLE","I2C","RTC","SPI",
+        "3.6V","1.8V"
+    ]
+}
